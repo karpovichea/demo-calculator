@@ -15,7 +15,7 @@ public class Calculator {
 
     public int divide(int a, int b) {
         if (b == 0) {
-            throw new ArithmeticException("На 0 делить нельзя!");
+            throw new ArithmeticException("Деление на 0 запрещено!");
         }
         return a / b;
     }
