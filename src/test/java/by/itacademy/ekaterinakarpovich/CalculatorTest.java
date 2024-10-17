@@ -34,6 +34,11 @@ public class CalculatorTest {
 
     @Test
     void testAdditionZeroNumbers() {
-        assertEquals(0, calculator.add(0, -0), "Сумма должна быть равна 0");
+        assertEquals(0, calculator.add(0, 0), "Сумма должна быть равна 0");
+    }
+
+    @Test
+    void testAdditionMaxAndMinIntegerValues() {
+        assertEquals(-1, calculator.add(Integer.MAX_VALUE, Integer.MIN_VALUE ), "Сумма должна быть равна -1");
     }
 }
