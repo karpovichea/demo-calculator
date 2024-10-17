@@ -21,4 +21,14 @@ public class CalculatorTest {
     void testAdditionPositiveAndNegativeNumbers() {
         assertEquals(1000, calculator.add(2000, -1000), "Сумма должна быть равна 1000");
     }
+
+    @Test
+    void testAdditionNegativeNumbers() {
+        assertEquals(-555, calculator.add(-550, -5), "Сумма должна быть равна -555");
+    }
+
+    @Test
+    void testAdditionZeroNumbers() {
+        assertEquals(0, calculator.add(0, -0), "Сумма должна быть равна 0");
+    }
 }
