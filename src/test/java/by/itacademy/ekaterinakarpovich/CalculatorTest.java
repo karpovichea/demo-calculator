@@ -28,6 +28,11 @@ public class CalculatorTest {
     }
 
     @Test
+    void testAdditionNegativeAndZeroNumbers() {
+        assertEquals(-189, calculator.add(-189, 0), "Сумма должна быть равна -189");
+    }
+
+    @Test
     void testAdditionZeroNumbers() {
         assertEquals(0, calculator.add(0, -0), "Сумма должна быть равна 0");
     }
