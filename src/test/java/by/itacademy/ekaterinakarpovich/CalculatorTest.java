@@ -11,4 +11,9 @@ public class CalculatorTest {
     void testAdditionPositiveNumbers() {
         assertEquals(10, calculator.add(2, 8), "Сумма должна быть равна 10");
     }
+
+    @Test
+    void testAdditionPositiveAndZeroNumbers() {
+        assertEquals(125, calculator.add(0, 125), "Сумма должна быть равна 125");
+    }
 }
