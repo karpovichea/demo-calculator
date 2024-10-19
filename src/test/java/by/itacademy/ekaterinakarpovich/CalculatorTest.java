@@ -41,4 +41,14 @@ public class CalculatorTest {
     void testAdditionMaxAndMinIntegerValues() {
         assertEquals(-1, calculator.add(Integer.MAX_VALUE, Integer.MIN_VALUE ), "Сумма должна быть равна -1");
     }
+
+    @Test
+    void testAdditionValuesOverMaxInteger() {
+        assertEquals(Integer.MAX_VALUE, calculator.add(Integer.MAX_VALUE, 1), "Сумма должна быть равна " + Integer.MAX_VALUE);
+    }
+
+    @Test
+    void testAdditionValuesLessMinInteger() {
+        assertEquals(Integer.MIN_VALUE, calculator.add(Integer.MIN_VALUE, -1), "Сумма должна быть равна " + Integer.MIN_VALUE);
+    }
 }
